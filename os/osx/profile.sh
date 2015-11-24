@@ -20,11 +20,6 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 # JAVA HOME
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
-# boot2docker goods
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/matt/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # $GOPATH
 export GOPATH=$HOME/Go
 
@@ -196,7 +191,7 @@ function port() {
 ## gopen - open to own github
 
 function gopen() {
-  open "https://github.com/matthewmueller/${1}";
+  open "https://github.com/PatrickDayII/${1}";
 }
 
 ## Open localhost

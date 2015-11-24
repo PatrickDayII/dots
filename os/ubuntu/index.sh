@@ -11,10 +11,6 @@ if [ 0 -eq `ubuntu` ]; then
   exit 0
 fi
 
-# Add sources
-curl https://get.docker.io/gpg | apt-key add -
-echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
-
 # Update ubuntu
 sudo aptitude    update
 sudo aptitude -y upgrade
@@ -68,9 +64,6 @@ sudo sed -i.bak \
   -e 's/^#X11Forwarding yes/X11Forwarding no/' \
   -e 's/X11Forwarding yes/X11Forwarding no/' \
   /etc/ssh/sshd_config
-
-# Install docker.io
-sudo aptitude install lxc-docker
 
 # Switch to user
 cd $home

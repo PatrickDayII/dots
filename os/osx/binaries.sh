@@ -30,7 +30,6 @@ brew install homebrew/dupes/grep
 # Install other useful binaries
 binaries=(
   graphicsmagick
-  boot2docker
   webkit2png
   phantomjs
   rename
