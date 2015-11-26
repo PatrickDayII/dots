@@ -7,43 +7,67 @@ set -eu
 
 # Apps
 apps=(
-  shimo
-  1password
-  alfred
-  dropbox
-  google-chrome
-  qlcolorcode
-  screenflick
-  slack
-  transmit
-  appcleaner
-  firefox
-  hazel
-  qlmarkdown
-  seil
-  spotify
-  vagrant
-  arq
-  flash
-  iterm2
-  qlprettypatch
-  shiori
-  sublime-text3
-  virtualbox
-  atom
-  flux
-  mailbox
-  qlstephen
-  sketch
-  tower
-  vlc
-  cloudup
-  nvalt
-  quicklook-json
-  skype
-  transmission
-  apikitchen
-  mamp
+# Productivity
+  evernote                          # Notes
+  skitch                            # Screen Capture
+  google-drive                      # Office
+  libreoffice                       # Office
+# Programming Tools
+  atom                              # Programming text editor
+  qlcolorcode                       # Syntax Highlighting
+  quicklook-json                    # Preview JSON files
+  qlmarkdown                        # QuickLook generator for Markdown files
+  qlstephen                         # Quicklook files without file extension
+  qlprettypatch                     # QuickLook generator for patch files.
+  git                               # GIT
+  github-desktop                    # Version control git client
+  apikitchen                        # HTTP debugging tool
+  vagrant                           # Virtual development environments
+# Internet & Communication
+  google-chrome                     # Web Browser
+  firefox                           # Web Browser
+  chromium                          # Web Browser
+  opera                             # Web Browser
+  adium                             # IM
+  skype                             # Video Chat
+# Reading and News
+  kindle                            # eBook Reader
+# Music, Photos, & Video
+  xld                               # CD Ripper
+  gimp                              # Image Editor
+  vlc                               # Media Player
+  movist                            # Media Player
+  plex-media-server                 # Media Server
+  vox                               # Music Player & SoundCloud Streamer
+  spotify                           # Music Streaming Service
+  handbrake                         # Video Encoder
+  handbrakecli                      # Video Encoder Handbrak Command Line Interface
+  makemkv                           # Video Encoder
+# Utilities
+  sophos-anti-virus-home-edition    # Antivirus
+  clamxav                           # Antivirus
+  transmission                      # BitTorrent Client
+  macpaw-gemini                     # Duplicate File Finder
+  disk-inventory-x                  # Disk Space Analyzer
+  cyberduck                         # FTP - Free
+  the-unarchiver                    # File Archive Utility
+  flux                              # Health - Reduces Eye Strain
+  lastpass                          # Password Manger
+  hyperdock                         # prefernce pane
+  sabnzbd                           # Usenet
+  geekbench                         # Cross-platform processor benchmark
+  geektool                          # Custome Information Display
+  iterm2                            # Terminal Emulator
+  caffeine                          # Stops Mac from Sleeping
+  burn                              # Disc Burning
+  appcleaner                        # Application Uninstaller
+  onyx                              # System Tweaker
+  anki                              # Flash Cards - SRS
+  cheatsheet                        # Displays keyboard shortcuts
+  eve                               # Learn Mac Shortcuts
+  parallels-desktop                 # Virtual Machine
+  vmware-fusion                     # Virtual Machine
+  shiori                            # Pinboard and Delicious OS X client
 )
 
 # fonts
@@ -98,8 +122,7 @@ main() {
 
   # Install homebrew-cask
   echo "installing cask..."
-  brew tap phinze/homebrew-cask
-  brew install brew-cask
+  brew install caskroom/cask/brew-cask
 
   # Tap alternative versions
   brew tap caskroom/versions
